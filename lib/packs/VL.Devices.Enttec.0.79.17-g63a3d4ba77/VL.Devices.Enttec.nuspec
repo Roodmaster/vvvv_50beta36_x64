@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.Devices.Enttec</id>
+    <version>0.79.17-g63a3d4ba77</version>
+    <title>VL.Devices.Enttec</title>
+    <authors>vvvv group</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contains nodes for EntTec devices.</description>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>Enttec, Dmx</tags>
+  </metadata>
+</package>

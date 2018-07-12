@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.Firmata</id>
+    <version>0.79.17-g63a3d4ba77</version>
+    <title>VL.IO.Firmata</title>
+    <authors>vvvv group</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides support for Firmata protocol</description>
+    <summary>VL.IO.Firmata</summary>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>VL Firmata Arduino</tags>
+  </metadata>
+</package>

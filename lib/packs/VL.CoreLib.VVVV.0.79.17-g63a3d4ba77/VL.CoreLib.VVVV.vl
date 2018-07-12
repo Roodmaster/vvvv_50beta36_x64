@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GLM1d2Y2hD2MHwjLKXZpSR" Summary="A base library for the VL integration into vvvv" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" Version="0.79">
+  <NugetDependency Id="UotO8tnnmhUPprvIZelmuK" Location="VL.CoreLib" Version="0.35.33" />
+  <NugetDependency Id="MNBFKJ5b0P8PjDIqcyZ0Cu" Location="VL.Core" Version="0.35.33" />
+  <Patch Id="OcBLXCJDYOGPcQJ72MySjP">
+    <Canvas Id="UpP7bEFWlusOS2YgBJs3w4">
+      <Canvas Id="Qak0kISdpWWQRdYDaNKJeU" Name="Collections" Position="286,271">
+        <Canvas Id="ISltoEVOtwNPxCwEglsala" Name="Spread" Position="283,268">
+          <!--
+
+    ************************ ToBufferDescription ************************
+
+-->
+          <Node Name="ToBufferDescription" Bounds="780,321,162,89" Id="VwdDEsa1c5ZLFoSj7baloo" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="Mxw0W5dur5RML6F16Wbl9D" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="792,344,138,22" AutoConnect="true" Id="HPRwleEQ0RbPO2BaKEEsGm">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionSpread`1" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionSpread`1" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="GZTbbjXtmPtLCn4IGs2F8N" Name="Data" Kind="InputPin" />
+                <Pin Id="Q3mxttpko2BNzgEBFLKTdT" Name="Set" Kind="InputPin" />
+                <Pin Id="UyiKvnxwROzLw5gjF95s9g" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="Mwa6jLEUYs6MkbvCROUNcf" Name="Data" Kind="InputPin" />
+              <Pin Id="QfIDzEGWvZOQQECnHMaz0t" Name="Set" Kind="InputPin" />
+              <Pin Id="SBYyAcsgS4rOZDQCaSOGmf" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="So8pFmyQkpvLukOebVRZLD" Bounds="794,391" />
+              <Link Id="ABid4UN7hLbME7LfVdbutY" Ids="So8pFmyQkpvLukOebVRZLD,SBYyAcsgS4rOZDQCaSOGmf" IsHidden="true" />
+              <Link Id="HqCVMfaNkcaNRrmvyK4E1X" Ids="UyiKvnxwROzLw5gjF95s9g,So8pFmyQkpvLukOebVRZLD" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription (Stride) ************************
+
+-->
+          <Node Name="ToBufferDescription (Stride)" Bounds="777,491,163,85" Id="SyBxXFRlKjgLE2YOdqjUlG" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="RYnlVYrMgsIMmeYhw2aAIs" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="790,514,138,22" AutoConnect="true" Id="KLGHoQT20KOP3g30t00anS">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionSpread`1" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionSpread`1" NeedsToBeDirectParent="true" />
+                  <PinReference Kind="InputPin" Name="Stride In Bytes" />
+                </p:NodeReference>
+                <Pin Id="SdHr13vEP7NNc8tBk0QzpG" Name="Data" Kind="InputPin" />
+                <Pin Id="EuaenAeDxhDNBDLAVswii5" Name="Stride In Bytes" Kind="InputPin" />
+                <Pin Id="JmPiuhQYmIZQZiFPBiSa2y" Name="Set" Kind="InputPin" />
+                <Pin Id="Quw37voYj4MOyuBRsDL9LW" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="VkSXZMft68VN8uVUGA9m4E" Name="Data" Kind="InputPin" />
+              <Pin Id="CU1R3S98FZ2M7437JNphYU" Name="Stride In Bytes" Kind="InputPin" />
+              <Pin Id="BuFj8WpL7BhNSl2ru4hJJ4" Name="Set" Kind="InputPin" />
+              <Pin Id="GCy8Ioaw1miQJnGKh5bjVr" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="L2xUkoc0jS4OmOMNqwfhpO" Bounds="791,557" />
+              <Link Id="OpBNrvHi5wDMb2sVjarcln" Ids="Quw37voYj4MOyuBRsDL9LW,L2xUkoc0jS4OmOMNqwfhpO" />
+              <Link Id="SJdgaMchqH8NjaJINI1vxY" Ids="L2xUkoc0jS4OmOMNqwfhpO,GCy8Ioaw1miQJnGKh5bjVr" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToRawBufferDescription ************************
+
+-->
+          <Node Name="ToRawBufferDescription" Bounds="468,315,168,100" Id="Nx5Fe9QonjQOeUyEzcz28o">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="GpOd3RqkISlOX2omegVpnn" ManuallySortedPins="true">
+              <Node Bounds="480,341,144,22" AutoConnect="true" Id="PFNPTRmPY5SPJ5nZQ9xZw4">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicRawBufferDescriptionSpread" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicRawBufferDescriptionSpread" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Dhhjsw6ADQ6PjM0rERb86p" Name="Data" Kind="InputPin" />
+                <Pin Id="TpPua8dsIXhOPeOJaUaAxH" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Eb0l7fviNgPOTRGjnbh5ZI" Name="Set" Kind="InputPin" />
+              </Node>
+              <ControlPoint Id="So3PPRzZldlNNgJvSMag5Y" Bounds="482,396" />
+              <Link Id="BRJdvzNnL0QM4b3MTJjRxE" Ids="So3PPRzZldlNNgJvSMag5Y,VXE7Vn8PHEKQZva212wIPy" IsHidden="true" />
+              <Link Id="FfLFgVttEIAQBCOxjRyoup" Ids="TpPua8dsIXhOPeOJaUaAxH,So3PPRzZldlNNgJvSMag5Y" />
+              <Pin Id="SGiRSD5Kd9vO1lb8ow1PKP" Name="Data" Kind="InputPin" />
+              <Pin Id="Gs3fG6s76oKQb3GU0jNoRQ" Name="Set" Kind="InputPin" />
+              <Pin Id="VXE7Vn8PHEKQZva212wIPy" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicRawBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+        </Canvas>
+        <Canvas Id="J3nD2ynzSerPEAYCmlozjf" Name="Array" Position="286,325">
+          <!--
+
+    ************************ ToRawBufferDescription ************************
+
+-->
+          <Node Name="ToRawBufferDescription" Bounds="482,290,164,100" Id="LXFaKlEqkkxNfDHd1his86">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="Cxkp2pxgSpmNe555hULkcr" ManuallySortedPins="true">
+              <Node Bounds="495,316,139,22" AutoConnect="true" Id="MO7J6rqtyK7Pg5f3qbWtm6">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicRawBufferDescriptionArray" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicRawBufferDescriptionArray" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="BCJ2wB5kWv8PkcCAIMH7Zc" Name="Data" Kind="InputPin" />
+                <Pin Id="DS8tPXzi1pAMGR7vuqjxV1" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="HdkECXgfVVxQAmqiCoKkos" Name="Set" Kind="InputPin" />
+              </Node>
+              <ControlPoint Id="CvD0gzGBXpNOBo0XOb8IZx" Bounds="496,371" />
+              <Link Id="Fuu1Vym7coZPB7JmT4sHbI" Ids="CvD0gzGBXpNOBo0XOb8IZx,RpG1iupKrhhPATFptjnkN8" IsHidden="true" />
+              <Link Id="UFYiIUqvD37Mw8ATGr48B9" Ids="DS8tPXzi1pAMGR7vuqjxV1,CvD0gzGBXpNOBo0XOb8IZx" />
+              <Pin Id="Sxxt5m3v97TMaQPF33aaFa" Name="Data" Kind="InputPin" />
+              <Pin Id="F1z3bAzXTZ2PU844E5uFTh" Name="Set" Kind="InputPin" />
+              <Pin Id="RpG1iupKrhhPATFptjnkN8" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicRawBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription ************************
+
+-->
+          <Node Name="ToBufferDescription" Bounds="774,292,162,89" Id="GTYEBAhUPaUMmh1m5D34KK" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="BGgnsyvgbbjNsfyng6Y1Pm" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="786,315,138,22" AutoConnect="true" Id="FQ2pAp3PpRpOCW6LABwsqp">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionArray`1" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionArray`1" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Hwozq4xDZYcOhGIYqTJk44" Name="Data" Kind="InputPin" />
+                <Pin Id="II4HIfTmWeFPpgHOxpt0GY" Name="Set" Kind="InputPin" />
+                <Pin Id="TXVbcEKybwwODMswSuWCJL" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="Qr2qA6tqzqVMyW64JDkI3J" Name="Data" Kind="InputPin" />
+              <Pin Id="RdqUqqMNBXWLSZOL6DNhvQ" Name="Set" Kind="InputPin" />
+              <Pin Id="ItUIEqeMnzXNKhX9vnaUjH" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="DczzoCsJBbCL9GDCrWeFV6" Bounds="788,362" />
+              <Link Id="IJAEpIIhTNiOuCZWrTf5RE" Ids="TXVbcEKybwwODMswSuWCJL,DczzoCsJBbCL9GDCrWeFV6" />
+              <Link Id="Q6PkUIHQmbvOqE3edv4IBa" Ids="DczzoCsJBbCL9GDCrWeFV6,ItUIEqeMnzXNKhX9vnaUjH" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription (Stride) ************************
+
+-->
+          <Node Name="ToBufferDescription (Stride)" Bounds="781,472,163,89" Id="JI3PP0GKZZINTKUToGBftl" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="HMVhHjqCUrbPOQ8IYGhMzH" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="794,495,138,22" AutoConnect="true" Id="DbaVROnnIcrOstSva44VJl">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionArray`1" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <PinReference Kind="InputPin" Name="Stride In Bytes" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionArray`1" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TtYp5Z2H1fwP8b4xBW8ffe" Name="Data" Kind="InputPin" />
+                <Pin Id="AMKhhOiASP6MZk6Z7uh38n" Name="Stride In Bytes" Kind="InputPin" />
+                <Pin Id="OJ0Hxq4AA26OBbfdLI4JsJ" Name="Set" Kind="InputPin" />
+                <Pin Id="Sd1zI40eaY4PegdGamOnJP" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="IW0zKydHzM1LRwBb3Jd3ms" Name="Data" Kind="InputPin" />
+              <Pin Id="QLVgPKCjdNhLwoDX7EjJGy" Name="Stride In Bytes" Kind="InputPin" />
+              <Pin Id="BuYemHtTO2pLHPHm58ydCO" Name="Set" Kind="InputPin" />
+              <Pin Id="CwUdyOk3Yp3Lc4eiT2L5EE" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="LYfXFJcbaebLLqHnDMqUMA" Bounds="795,542" />
+              <Link Id="JlWiWpiUe5cMBBPKm6XxFX" Ids="Sd1zI40eaY4PegdGamOnJP,LYfXFJcbaebLLqHnDMqUMA" />
+              <Link Id="DbuqzP25aWNQZKMBDm1e5o" Ids="LYfXFJcbaebLLqHnDMqUMA,CwUdyOk3Yp3Lc4eiT2L5EE" IsHidden="true" />
+            </Patch>
+          </Node>
+        </Canvas>
+      </Canvas>
+      <Canvas Id="SD0b7khhBjCMoSXAnlYXmG" Name="Primitive" Position="286,359">
+        <Canvas Id="LBhwVmUSTshO4OQkAwI06u" Name="IntPtr" Position="261,203">
+          <!--
+
+    ************************ ToBufferDescription ************************
+
+-->
+          <Node Name="ToBufferDescription" Bounds="681,270,162,88" Id="B7AHE5xPEmELwZajoBhVEs" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="SHkhf06CnN0LmZ83cQKwAh" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="693,293,138,22" AutoConnect="true" Id="HjWVKbhtw6vMptyTb6j6EW">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionIntPtr" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionIntPtr" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="GcHanDlTNMRNhUzkuAqbJ9" Name="Data" Kind="InputPin" />
+                <Pin Id="HnUtnzfEKWVOZWU0icaQ8i" Name="Data Size In Bytes" Kind="InputPin" />
+                <Pin Id="O8No1mTEFfcMDXdsdwmItH" Name="Set" Kind="InputPin" />
+                <Pin Id="Dc1oDt2JbO5L62Qqf4M8hQ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="CbAtIrT6X7pMptOdRNehmO" Name="Data" Kind="InputPin" />
+              <Pin Id="U8osP41YHT6MAKqf8qt20u" Name="Data Size In Bytes" Kind="InputPin" />
+              <Pin Id="BiiSv4H9MHfLp3iEJ5o0Lc" Name="Set" Kind="InputPin" />
+              <ControlPoint Id="L3D9uuqx4lSPRxf26OnHra" Bounds="695,339" />
+              <Pin Id="JrgXJzlI3hDLgOGdlGCq0t" Name="Output" Kind="OutputPin" Visibility="Hidden">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="TZu7jSboZzeNQY6QJzQcPH" Ids="L3D9uuqx4lSPRxf26OnHra,JrgXJzlI3hDLgOGdlGCq0t" IsHidden="true" />
+              <Link Id="MGJNd3WNrLUL5RLcBGDShO" Ids="Dc1oDt2JbO5L62Qqf4M8hQ,L3D9uuqx4lSPRxf26OnHra" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription (Stride) ************************
+
+-->
+          <Node Name="ToBufferDescription (Stride)" Bounds="685,429,162,89" Id="A45lbfr1Lj2PDpqmC3DIsM" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="VAyC45p1XAgQAOocCWzdLN" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="697,452,138,22" AutoConnect="true" Id="BYQyQkHEKV1LvAcOmNifkz">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionIntPtr" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <PinReference Kind="InputPin" Name="Stride In Bytes" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionIntPtr" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="D1JQBVT967wOYaX4CSVg0W" Name="Data" Kind="InputPin" />
+                <Pin Id="NoWqhe6R6gHPQENchXJBcd" Name="Data Size In Bytes" Kind="InputPin" />
+                <Pin Id="TZDIHI9gR3mQUu9h3i4Ye2" Name="Stride In Bytes" Kind="InputPin" />
+                <Pin Id="HsQqHIDj0jlOH7OMxiRQTO" Name="Set" Kind="InputPin" />
+                <Pin Id="BR9003SqDBLMyIisyF9KTM" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="EnzXXGsMg5YMajsCmGlg2u" Name="Data" Kind="InputPin" />
+              <Pin Id="ICt8A6L9v97OgwRVOxXoGm" Name="Data Size In Bytes" Kind="InputPin" />
+              <Pin Id="BlO3OS16KUMOxPH80RhMyd" Name="Stride In Bytes" Kind="InputPin" />
+              <Pin Id="FtTmmbHGK4wLBM1BmwwZEM" Name="Set" Kind="InputPin" />
+              <ControlPoint Id="K5jwOuSSED0MHbGeTeoecA" Bounds="699,499" />
+              <Pin Id="DUDVIP8md0TOu1YBbD6Rh7" Name="Output" Kind="OutputPin" Visibility="Hidden">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="Rwh4nnLpxdzPUmJeGBFR2k" Ids="K5jwOuSSED0MHbGeTeoecA,DUDVIP8md0TOu1YBbD6Rh7" IsHidden="true" />
+              <Link Id="E00QSBpThFxOuBb7lFjxfL" Ids="BR9003SqDBLMyIisyF9KTM,K5jwOuSSED0MHbGeTeoecA" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToRawBufferDescription ************************
+
+-->
+          <Node Name="ToRawBufferDescription" Bounds="372,264,163,100" Id="MDNoW9LXShlO92NVH3KGoL">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="LLGRnmt4Xy6MKilBIwA86n" ManuallySortedPins="true">
+              <Node Bounds="385,290,138,22" AutoConnect="true" Id="DBTu9SXvLp9OvnX0OVTJXN">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicRawBufferDescriptionIntPtr" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicRawBufferDescriptionIntPtr" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Fi6RCNtLE7XO1yTLs8zG0U" Name="Data" Kind="InputPin" />
+                <Pin Id="M61wKfOhRKbMQsxuEhyJa6" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="IZ2cRcwTtSXNhHuqxYcPcI" Name="Data Size In Bytes" Kind="InputPin" />
+                <Pin Id="PY4GcEW2YXfMkoCXqCyZgt" Name="Set" Kind="InputPin" />
+              </Node>
+              <ControlPoint Id="U76UxKQEpPnLa1eo6F9Eyv" Bounds="386,345" />
+              <Link Id="EljpiBYBFgeNXrmPGwLMsy" Ids="M61wKfOhRKbMQsxuEhyJa6,U76UxKQEpPnLa1eo6F9Eyv" />
+              <Link Id="TIOs5IktWcTL1R3wDfIAbx" Ids="U76UxKQEpPnLa1eo6F9Eyv,RFzQMYPsoldLDjFqqH6YbA" IsHidden="true" />
+              <Pin Id="JJbzF9heE5oLuW9o3Ke8V6" Name="Data" Kind="InputPin" />
+              <Pin Id="VRoAwaXNtwkMjSHciX2viN" Name="Data Size In Bytes" Kind="InputPin" />
+              <Pin Id="O7NpzuAoGUTNoq3jN3lgID" Name="Set" Kind="InputPin" />
+              <Pin Id="RFzQMYPsoldLDjFqqH6YbA" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicRawBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+        </Canvas>
+      </Canvas>
+      <Canvas Id="HNSBh3timQrOHzlWLgYQCX" Name="VVVV" Position="286,409">
+        <Canvas Id="SXQcRDnoJAUM1GNqDtJOOH" Name="DirectX" Position="310,239">
+          <!--
+
+    ************************ DynamicBufferDescription ************************
+
+-->
+          <Node Name="DynamicBufferDescription" Bounds="347,226" Id="GzjExdgfs1dOQUbOxuw9hF">
+            <p:NodeReference>
+              <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VL.Lib.VVVV" LastSymbolSource="VL.CoreLib.VVVV.dll">
+              <Choice Kind="ClassType" Name="DynamicBufferDescription" />
+            </p:TypeAnnotation>
+            <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+            <Patch Id="KzuQjk4EauhQXKeBrSEhE1">
+              <Canvas Id="Dc8LEsLD0UMNvDAS2xZZlR">
+                <!--
+
+    ************************ CreateDefault ************************
+
+-->
+                <Node Name="CreateDefault" Bounds="267,143,67,79" Id="JSg3lD5iYtaMNufRwTYFWW">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                    <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                    <Choice Kind="OperationDefinition" Name="Operation" />
+                  </p:NodeReference>
+                  <Patch Id="JurBrC8647rMVdtDWY8EXB" IsExplicitlyHidden="true">
+                    <ControlPoint Id="M1dUwv5J0IfNUzBTLANYq2" Bounds="281,203" />
+                    <Pin Id="KwKycg0Ef8mNKGtwlriOfS" Name="Output" Kind="OutputPin" Visibility="Hidden">
+                      <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                        <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Link Id="N3mwrhVKZiJM0dNu9smQSB" Ids="M1dUwv5J0IfNUzBTLANYq2,KwKycg0Ef8mNKGtwlriOfS" IsHidden="true" />
+                    <Node Bounds="280,166,37,13" Id="ReYepFVqjQ1QcP9cByeyX6">
+                      <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescription" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <AssemblyReference ID="VL.CoreLib.VVVV.dll" />
+                        <CategoryReference Kind="AssemblyCategory" Name="VL" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Lib" />
+                        <CategoryReference Kind="AssemblyCategory" Name="VVVV" />
+                        <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescription" />
+                        <Choice Kind="OperationCallFlag" Name="Empty" />
+                      </p:NodeReference>
+                      <Pin Id="FdPiDX0C37MQYTmBLuBrOv" Name="Empty" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="MiRH7DpLdwaLdQKsqBOGUc" Ids="FdPiDX0C37MQYTmBLuBrOv,M1dUwv5J0IfNUzBTLANYq2" />
+                  </Patch>
+                </Node>
+              </Canvas>
+              <ProcessDefinition Id="BmSMeHxR2iQLRd43JyQarX" IsHidden="true">
+                <Fragment Id="U3iYvJNgzIaN7e5MyMx3TL" Patch="JSg3lD5iYtaMNufRwTYFWW" Enabled="true" />
+              </ProcessDefinition>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ DynamicRawBufferDescription ************************
+
+-->
+          <Node Name="DynamicRawBufferDescription" Bounds="346,278" Id="PuOqupFTT5SNXxcUaFouiw">
+            <p:NodeReference>
+              <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VL.Lib.VVVV" LastSymbolSource="VL.CoreLib.VVVV.dll">
+              <Choice Kind="ClassType" Name="DynamicRawBufferDescription" />
+            </p:TypeAnnotation>
+            <Patch Id="OQNKI0okeo9N0dA8Hk7sn4">
+              <Canvas Id="NzGJjmPNgwgO11Gpm9z3TS">
+                <!--
+
+    ************************ CreateDefault ************************
+
+-->
+                <Node Name="CreateDefault" Bounds="219,161,67,79" Id="NLCbURGSeO3Nx5yDP0rtPn">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                    <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                    <Choice Kind="OperationDefinition" Name="Operation" />
+                  </p:NodeReference>
+                  <Patch Id="UcYOuVhjU6aLiOkdIgOwAm" IsExplicitlyHidden="true">
+                    <ControlPoint Id="AcL4YWjsNEJLuEP657cEUZ" Bounds="233,221" />
+                    <Pin Id="PLkr8uDheMCPdWXmmw7p3r" Name="Output" Kind="OutputPin">
+                      <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                        <Choice Kind="TypeFlag" Name="DynamicRawBufferDescription" />
+                      </p:TypeAnnotation>
+                    </Pin>
+                    <Link Id="BjXmg8jzKEQPwQxFa3cMNJ" Ids="AcL4YWjsNEJLuEP657cEUZ,PLkr8uDheMCPdWXmmw7p3r" IsHidden="true" />
+                    <Node Bounds="232,184,37,13" Id="T4S3p9kgsNTLc2C4J5EOF6">
+                      <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicRawBufferDescription" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Empty" />
+                        <CategoryReference Kind="AssemblyCategory" Name="DynamicRawBufferDescription" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="BkuOWez8SxPNcOYIiAvwY6" Name="Empty" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="HQqY8c65CH6O4mx4CLgkzS" Ids="BkuOWez8SxPNcOYIiAvwY6,AcL4YWjsNEJLuEP657cEUZ" />
+                  </Patch>
+                </Node>
+              </Canvas>
+              <ProcessDefinition Id="GzCrmcNKQtcL1Dbpm46rMY" IsHidden="true">
+                <Fragment Id="Ja648Ag4d4FNq8pvSgj7d3" Patch="NLCbURGSeO3Nx5yDP0rtPn" Enabled="true" />
+              </ProcessDefinition>
+            </Patch>
+          </Node>
+        </Canvas>
+        <Canvas Id="CLSnhelC66WNxy2lqp14WY" Name="IO" Position="311,296">
+          <!--
+
+    ************************ VVVVKeyboardDevice ************************
+
+-->
+          <Node Name="VVVVKeyboardDevice" Bounds="354,274" Id="A3t8BvT9bRTNS1309ya0YT">
+            <p:NodeReference>
+              <Choice Kind="ForwardDefinition" Name="Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VVVV.Utils.IO" LastSymbolSource="VVVV.Utils.dll">
+              <Choice Kind="TypeFlag" Name="Keyboard" />
+            </p:TypeAnnotation>
+            <Patch Id="AU9G4H2OUQENTKDGSBODyO">
+              <Canvas Id="Cqog8plHe09QXvqseTo2iF" BordersChecked="false" />
+              <ProcessDefinition Id="ScLwUlG5mTXOMdUHHgeizf" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ VVVVMouseDevice ************************
+
+-->
+          <Node Name="VVVVMouseDevice" Bounds="354,324" Id="FDqzwRRpEhRM2ajXvTvcx9">
+            <p:NodeReference>
+              <Choice Kind="ForwardDefinition" Name="Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VVVV.Utils.IO" LastSymbolSource="VVVV.Utils.dll">
+              <Choice Kind="TypeFlag" Name="Mouse" />
+            </p:TypeAnnotation>
+            <Patch Id="HmH2TJNaq97PuxdLazlKzf">
+              <Canvas Id="BkYPuytve4kQIr5Y6R7zeI" BordersChecked="false" />
+              <ProcessDefinition Id="TpOBCd5cNY1MlcgnjDZpaZ" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ VVVVTouchDevice ************************
+
+-->
+          <Node Name="VVVVTouchDevice" Bounds="354,374" Id="DvKWDomgb82MNB9pj9Uydj">
+            <p:NodeReference>
+              <Choice Kind="ForwardDefinition" Name="Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VVVV.Utils.IO" LastSymbolSource="VVVV.Utils.dll">
+              <Choice Kind="TypeFlag" Name="TouchDevice" />
+            </p:TypeAnnotation>
+            <Patch Id="KCvFS2lHwZoPgnOYbXEgyi">
+              <Canvas Id="KE4BeQpaBrZMWWGeb6bA8h" BordersChecked="false" />
+              <ProcessDefinition Id="ApuCNdeR2WoOhBGiSQQtOM" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ VVVVGestureDevice ************************
+
+-->
+          <Node Name="VVVVGestureDevice" Bounds="356,420" Id="KvmpDn6m6jYMnoSKN87djx">
+            <p:NodeReference>
+              <Choice Kind="ForwardDefinition" Name="Forward" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="VVVV.Utils.IO" LastSymbolSource="VVVV.Utils.dll">
+              <Choice Kind="TypeFlag" Name="GestureDevice" />
+            </p:TypeAnnotation>
+            <Patch Id="P2I5XUZU7n4LpleXcvJuYL">
+              <Canvas Id="K556oAQqhplO7LfnbyCitl" BordersChecked="false" />
+              <ProcessDefinition Id="VYGkHgoigbSLgPMFoVjaKw" IsHidden="true" />
+            </Patch>
+          </Node>
+        </Canvas>
+      </Canvas>
+      <Canvas Id="U7ubgyGdixuOXAAO1siP8w" Name="IO" Position="286,313">
+        <Canvas Id="MON0TMEVPROMJ8FyJMpVpP" Name="Stream" Position="307,267">
+          <!--
+
+    ************************ ToRawBufferDescription ************************
+
+-->
+          <Node Name="ToRawBufferDescription" Bounds="393,329,168,100" Id="ONC8EybncO4PthlkHHUH5r">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="LOqmCZOFOk6N3DbSKAWpuL" ManuallySortedPins="true">
+              <Node Bounds="405,355,144,13" AutoConnect="true" Id="L40OLnFT2kbLlBmi8TQgcz">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicRawBufferDescriptionStream" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicRawBufferDescriptionStream" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TPsU3gQHjqKM6dNU6Qjyca" Name="Data" Kind="InputPin" />
+                <Pin Id="Q8r0aq5y7llOm9xFvecT26" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Gqv0O8xT7MCNPB18B8pn4X" Name="Set" Kind="InputPin" />
+              </Node>
+              <ControlPoint Id="J2Z7R2q04zTQECCdQvOHWX" Bounds="407,410" />
+              <Link Id="FzHEbUXMgB0OVqQb8CPJh6" Ids="J2Z7R2q04zTQECCdQvOHWX,MN9DCh64bpxM603QPg6AG6" IsHidden="true" />
+              <Link Id="M7oN2XUKwGAOMJB8oEJGVd" Ids="Q8r0aq5y7llOm9xFvecT26,J2Z7R2q04zTQECCdQvOHWX" />
+              <Pin Id="TLuIqt3EJMSLsjFOZhdR0V" Name="Data" Kind="InputPin" />
+              <Pin Id="NFPY2NWwXAsLQoZcij2MsB" Name="Set" Kind="InputPin" />
+              <Pin Id="MN9DCh64bpxM603QPg6AG6" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicRawBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription ************************
+
+-->
+          <Node Name="ToBufferDescription" Bounds="697,325,163,83" Id="PyBU7ZsVlQVPQaxqhHuayZ" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="Sw9o2g6XWW4OVgFyYIuOd9" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="710,348,138,13" AutoConnect="true" Id="Sz5dsOUcTUJNSspI687MT1">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionStream" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionStream" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="LIQAxuNBSwdMdLUlpZymrg" Name="Data" Kind="InputPin" />
+                <Pin Id="OQRdF0uFao8OCi4qBHNeZE" Name="Set" Kind="InputPin" />
+                <Pin Id="TB2cIUWHglsOs2LX8KwuzK" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="ER1OfAGFco1OKuPznVZcT1" Name="Data" Kind="InputPin" />
+              <Pin Id="NyutxvEc4NFMTWOQaHxbP5" Name="Set" Kind="InputPin" />
+              <ControlPoint Id="KAKB9FBvdddLQqr4vyQeYq" Bounds="711,389" />
+              <Pin Id="NMSPtfjy8cONiudvGtnKG7" Name="Output" Kind="OutputPin" Visibility="Hidden">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="HSQL078nfAmMITsf9Ktt0J" Ids="KAKB9FBvdddLQqr4vyQeYq,NMSPtfjy8cONiudvGtnKG7" IsHidden="true" />
+              <Link Id="O5TFblNrMdBOvzbml9BzXz" Ids="TB2cIUWHglsOs2LX8KwuzK,KAKB9FBvdddLQqr4vyQeYq" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ToBufferDescription (Stride) ************************
+
+-->
+          <Node Name="ToBufferDescription (Stride)" Bounds="699,483,162,86" Id="K1Vd6RPel5BLnjJMJofdwq" Remarks="A Matrix needs to be transposed to have the same behavior in the shader as a transform input pin, either in VL before putting it into the BufferDescription or the faster way, define the matrix in the shader with &quot;row_major float4x4 MyMatrix;&quot; or use Transpose() method in the shader.">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="NXD3zxBvXyULReDQFzjUOC" IsGeneric="true" ManuallySortedPins="true">
+              <Node Bounds="711,506,138,13" AutoConnect="true" Id="FpbVNyQmY4MMnY1PCW5QA5">
+                <p:NodeReference LastCategoryFullName="VL.Lib.VVVV.DynamicBufferDescriptionStream" LastSymbolSource="VL.CoreLib.VVVV.dll" LastDependency="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <PinReference Kind="InputPin" Name="Stride In Bytes" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DynamicBufferDescriptionStream" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TllvPsCYUcSN8klgWXzio5" Name="Data" Kind="InputPin" />
+                <Pin Id="T4rj4pHwNPoMFl6Ay0vrfS" Name="Stride In Bytes" Kind="InputPin" />
+                <Pin Id="MWcUGmFdmrjO6PzJbRzGYw" Name="Set" Kind="InputPin" />
+                <Pin Id="QKpkxBGKUb5OPOq1UxdIq1" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="TpNXV3zJDalNWHir5kBXnU" Name="Data" Kind="InputPin" />
+              <Pin Id="DN38FIsI9OuP3xtMAh5U4s" Name="Stride In Bytes" Kind="InputPin" />
+              <Pin Id="Tnkcr7zek6KLqhscHdq61P" Name="Set" Kind="InputPin" />
+              <ControlPoint Id="PMaFTlHEm4rLd9ZJnBBIwh" Bounds="713,550" />
+              <Pin Id="Hza1Ykl6eJhQFsUCmPmhTR" Name="Output" Kind="OutputPin" Visibility="Hidden">
+                <p:TypeAnnotation LastCategoryFullName="VVVV.DirectX" LastSymbolSource="VL.CoreLib.VVVV.vl">
+                  <Choice Kind="TypeFlag" Name="DynamicBufferDescription" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="ObLv529HhRTL3uR025FQSQ" Ids="PMaFTlHEm4rLd9ZJnBBIwh,Hza1Ykl6eJhQFsUCmPmhTR" IsHidden="true" />
+              <Link Id="PkErILvNB0ENMHCNyIGehz" Ids="QKpkxBGKUb5OPOq1UxdIq1,PMaFTlHEm4rLd9ZJnBBIwh" />
+            </Patch>
+          </Node>
+        </Canvas>
+      </Canvas>
+    </Canvas>
+  </Patch>
+  <PlatformDependency Id="MI5wXV2YFKFLsFqSV8FRNK" Location="./vvvv/nodes/plugins/VL.CoreLib.VVVV.dll" />
+  <NugetDependency Id="KLdVfQVrVDDObgmpmkpwRL" Location="VL.DevLib" Version="0.74.31-g6a2e48ed9c" />
+  <PlatformDependency Id="Dri2ReO9v12OS9D3ekcYwX" Location="VVVV.Utils.dll" />
+</Document>

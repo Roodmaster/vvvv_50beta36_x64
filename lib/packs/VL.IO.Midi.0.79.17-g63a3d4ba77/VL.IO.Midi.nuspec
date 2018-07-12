@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.Midi</id>
+    <version>0.79.17-g63a3d4ba77</version>
+    <title>VL.IO.Midi</title>
+    <authors>vvvv group</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides Midi support for VL</description>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>VL</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="VL.Core" version="0.79.17-g63a3d4ba77" />
+        <dependency id="VL.CoreLib" version="0.79.17-g63a3d4ba77" />
+        <dependency id="Sanford.Multimedia.Midi" version="6.5.0" />
+        <dependency id="System.Reactive" version="4.0.0-preview00001" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

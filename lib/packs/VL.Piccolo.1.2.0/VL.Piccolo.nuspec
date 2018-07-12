@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>VL.Piccolo</id>
+    <version>1.2.0</version>
+    <title>VL.Piccolo</title>
+    <authors>piccolo2d</authors>
+    <owners>vvvv group</owners>
+    <licenseUrl>http://www.cs.umd.edu/hcil/piccolo/download/open-source.shtml</licenseUrl>
+    <projectUrl>http://www.cs.umd.edu/hcil/piccolo</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Structured 2D Graphics Framework</description>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>Piccolo</tags>
+  </metadata>
+</package>

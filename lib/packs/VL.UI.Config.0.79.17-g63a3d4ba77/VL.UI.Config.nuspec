@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.UI.Config</id>
+    <version>0.79.17-g63a3d4ba77</version>
+    <title>VL.UI.Config</title>
+    <authors>vvvv group</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The VL User Interface Configuration package</description>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>VL</tags>
+  </metadata>
+</package>

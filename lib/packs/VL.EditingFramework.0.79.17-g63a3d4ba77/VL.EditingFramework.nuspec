@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.EditingFramework</id>
+    <version>0.79.17-g63a3d4ba77</version>
+    <title>VL.EditingFramework</title>
+    <authors>vvvv group</authors>
+    <owners>vvvv group</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides support for Cameras and Editors in VL</description>
+    <copyright>Copyright © 2016 by vvvv group. All rights reserved.</copyright>
+    <tags>VL</tags>
+    <dependencies>
+      <dependency id="VL.CoreLib" version="0.79.17-g63a3d4ba77" />
+    </dependencies>
+  </metadata>
+</package>

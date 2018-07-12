@@ -1,0 +1,59 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Users\Raphael\Desktop\vvvv_stuff\spreads2_row_col.v4p" systemname="spreads2_row_col" filename="C:\Users\Raphael\Desktop\vvvv_stuff\spreads2_row_col.v4p">
+   <BOUNDS type="Window" left="5010" top="2220" width="9585" height="10725">
+   </BOUNDS>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="450" top="570" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="450" top="570" width="2625" height="750">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="29.83,29.83,29.83,29.83">
+   </PIN>
+   <PIN pinname="X Input Value" visible="0" pintype="Input" slicecount="4" values="0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="630" top="2310" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="2310" width="2055" height="1875">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="Müller,Meier,Mönchhof,Muster">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="4005" top="1290" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4005" top="1290" width="4815" height="2130">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="4" values="|0.15850,0.26413,0.00000,1.00000|,|0.15850,0.26413,0.00000,1.00000|,|0.15850,0.26413,0.00000,1.00000|,|0.15850,0.26413,0.00000,1.00000|">
+   </PIN>
+   </NODE>
+   </PATCH>

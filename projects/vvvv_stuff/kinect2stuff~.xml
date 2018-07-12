@@ -1,0 +1,41 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Users\Raphael\Desktop\vvvv_stuff\kinect2stuff.v4p" systemname="kinect2stuff" filename="C:\Users\Raphael\Desktop\vvvv_stuff\kinect2stuff.v4p">
+   <BOUNDS type="Window" left="13215" top="3795" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="Hand (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Hand (Kinect2 Microsoft)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2010" top="915" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2010" top="915" width="3000" height="3000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1890" top="2745" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1890" top="2745" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20880" top="6120" width="6240" height="5085">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="4800" top="1800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4800" top="1800" width="3000" height="3000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Face (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Face (Kinect2 Microsoft)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1710" top="3690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1710" top="3690" width="3000" height="3000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Gesture (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Gesture (Kinect2 Microsoft)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="5820" top="3075" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5820" top="3075" width="3000" height="3000">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   </PATCH>

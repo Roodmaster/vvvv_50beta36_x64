@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="AZFkohqeJbMMvWBi7VBs4X" Version="0.79">
+  <Patch Id="Q76OvmiP05AOeDmIDvGC1c">
+    <Canvas Id="Vog87JxpH83PcFuenmZ06O" DefaultCategory="Basics.Imaging">
+      <!--
+
+    ************************ Image ************************
+
+-->
+      <Node Name="Image" Bounds="347,163" Id="ESSSli6a839OMqwmzDLbA4">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Lib.Basics.Imaging" LastSymbolSource="VL.Core.dll">
+          <Choice Kind="MutableInterfaceType" Name="IImage" />
+        </p:TypeAnnotation>
+        <Patch Id="L8UBd4PnYnENEE6HNpNJsc">
+          <Canvas Id="BzkUPliD7ZkLPhexCrKiLU">
+            <!--
+
+    ************************ CreateDefault ************************
+
+-->
+            <Node Name="CreateDefault" Bounds="300,132,66,78" Id="HfV0EfjOZxoP2Qv7U6R79O">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin" LastDependency="VL.Imaging.vl">
+                <Choice Kind="OperationDefinition" Name="Operation" />
+              </p:NodeReference>
+              <Patch Id="S9vl6BZTAWhM6pFhEpFCMQ">
+                <Node Bounds="312,155,42,13" Id="TQOqopoqUggQUTnADwdT8Q">
+                  <p:NodeReference LastCategoryFullName="VL.Lib.Basics.Imaging.ImageExtensions" LastSymbolSource="VL.Core.dll" LastDependency="VL.Imaging.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Default" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ImageExtensions" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="F4PdBAbm5AiNCeN4ZcGBch" Name="Default" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="E7AMoTFlxwXNxjlvaoSGSG" Bounds="314,192" />
+                <Link Id="IR0yD5A1EugNmJySWeEhng" Ids="F4PdBAbm5AiNCeN4ZcGBch,E7AMoTFlxwXNxjlvaoSGSG" />
+                <Pin Id="BGiN1rBWfMcPRZiCLf3Imw" Name="Default" Kind="OutputPin" Bounds="364,242" />
+                <Link Id="AJ2c2aJ3JpdMwCifiQERfb" Ids="E7AMoTFlxwXNxjlvaoSGSG,BGiN1rBWfMcPRZiCLf3Imw" IsHidden="true" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Clone ************************
+
+-->
+            <Node Name="Clone" Bounds="299,279,122,85" Id="CyEyAnxF3zDLEQAt3qTEmB">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Patch Id="FsrAWIHDLZ7QDApH5DGeHy">
+                <Node Bounds="321,314,35,13" AutoConnect="true" Id="T3xwIt91Cj8OdFbdcGZodP">
+                  <p:NodeReference LastCategoryFullName="VL.Lib.Basics.Imaging.ImageExtensions" LastSymbolSource="VL.Core.dll">
+                    <Choice Kind="OperationNode" Name="Clone" />
+                    <FullNameCategoryReference ID="VL.Lib.Basics.Imaging.ImageExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="Gq7NT9mYe8IL9Zm985TsSY" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="C2gbwkEyn95MZzSn0z19si" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="AlNTFrQdLbVPwohGAbx7Wm" Name="Input" Kind="InputPin" />
+                <Pin Id="Pfg3Michz8BPOJhLyNNjAs" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ CloneEmpty ************************
+
+-->
+            <Node Name="CloneEmpty" Bounds="589,279,112,85" Id="IicsWqPDaTrNDnuSY9Buzk">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Patch Id="FWTVemk0kxBP0XEi6H4fSS">
+                <Node Bounds="601,314,64,13" AutoConnect="true" Id="N43flUo4K2EQDpsO4rMgkZ">
+                  <p:NodeReference LastCategoryFullName="VL.Lib.Basics.Imaging.ImageExtensions" LastSymbolSource="VL.Core.dll">
+                    <Choice Kind="OperationNode" Name="CloneEmpty" />
+                    <FullNameCategoryReference ID="VL.Lib.Basics.Imaging.ImageExtensions" />
+                  </p:NodeReference>
+                  <Pin Id="NPiDhtIJlBYLiHDa56X7tW" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="A3ZhllugAyqM5sQljI1Dmr" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="GqYD33w6aiYMg7omPqgJ7C" Name="Input" Kind="InputPin" />
+                <Pin Id="Lvo6wrcq1q9MOU5UUK5kCb" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="AKLh9rIrSKPLQ2xvHrIapa" IsHidden="true">
+            <Fragment Id="Co7tL9UgoDPP78rQSCQxiC" Patch="HfV0EfjOZxoP2Qv7U6R79O" Enabled="true" />
+            <Fragment Id="BdyDEgZyRnUQBVGK80q2JM" Patch="CyEyAnxF3zDLEQAt3qTEmB" />
+            <Fragment Id="ITVTFxS5Kp7PoHBpLxNLKu" Patch="IicsWqPDaTrNDnuSY9Buzk" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ImageData ************************
+
+-->
+      <Node Name="ImageData" Bounds="525,162" Id="K8km3M2MO00NA8Vn9Bg7Xs">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Lib.Basics.Imaging" LastSymbolSource="VL.CoreLib.dll">
+          <Choice Kind="TypeFlag" Name="IImageData" />
+        </p:TypeAnnotation>
+        <Patch Id="I6x9kky5g7kMpQAd0N8lS1">
+          <Canvas Id="Cvjtxn6WCB1MjmpxobQUhQ" BordersChecked="false" />
+          <ProcessDefinition Id="TMxv2C2fir1LNTUrdhs7oX" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ImageInfo ************************
+
+-->
+      <Node Name="ImageInfo" Bounds="344,246" Id="Hj5jCuhBS4rQHVTWNFwNnK">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Lib.Basics.Imaging" LastSymbolSource="VL.CoreLib.dll">
+          <Choice Kind="TypeFlag" Name="ImageInfo" />
+        </p:TypeAnnotation>
+        <Patch Id="RqBjZsf5tdlLTZa3kRi2hC">
+          <Canvas Id="S9Mh8XQgX23LpvPL9nyZH4" />
+          <ProcessDefinition Id="GSsJ24DxzogOAcxsLaLN5F" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PixelFormat ************************
+
+-->
+      <Node Name="PixelFormat" Bounds="526,246" Id="Sm4IPEWPUHiMcrKlfG2Zmn">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Lib.Basics.Imaging" LastSymbolSource="VL.CoreLib.dll">
+          <Choice Kind="TypeFlag" Name="PixelFormat" />
+        </p:TypeAnnotation>
+        <Patch Id="C1KhjYyqPtXNLJfnOeD64K">
+          <Canvas Id="AMy3TGVU9dbQXmYFul5VcW" BordersChecked="false" />
+          <ProcessDefinition Id="FIJcGWbJOD0QDoBkkVgRRD" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ArrayImage ************************
+
+-->
+      <Node Name="ArrayImage" Bounds="344,326" Id="NrLl4gRYAOWQFUsibsA1Au">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Lib.Basics.Imaging" LastSymbolSource="VL.Core.dll">
+          <Choice Kind="TypeFlag" Name="ArrayImage`1" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="N0JkELiLzQ0MSqWAe09Zmb">
+          <Canvas Id="D9kAyuVhIM1On7pxSbaNJi">
+            <!--
+
+    ************************ CreateDefault ************************
+
+-->
+            <Node Name="CreateDefault" Bounds="372,180,80,80" Id="Qpu0GQ8LK2mO0ITJGgqhqY">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin" LastDependency="VL.Imaging.vl">
+                <Choice Kind="OperationDefinition" Name="Operation" />
+              </p:NodeReference>
+              <Patch Id="VI3h0npeIghP02Acrlobxk" IsGeneric="true">
+                <Node Bounds="391,215,42,13" AutoConnect="true" Id="NTZkBrqj9YZOPZTs10v2Ls">
+                  <p:NodeReference LastCategoryFullName="VL.Lib.Basics.Imaging.ArrayImage`1" LastSymbolSource="VL.Core.dll" LastDependency="VL.Imaging.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ArrayImage`1" />
+                    <Choice Kind="OperationCallFlag" Name="Default" />
+                  </p:NodeReference>
+                  <Pin Id="T6isELqC0iEPNzSjpYsEp8" Name="Default" Kind="OutputPin" />
+                </Node>
+                <Pin Id="NkPuOE6VZtFPgsm464iQx4" Name="Default" Kind="OutputPin" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="MmjvVgn5vlyMalT7xML1kX" IsHidden="true">
+            <Fragment Id="M3CkMcSh29TN8cRaY7BgnM" Patch="Qpu0GQ8LK2mO0ITJGgqhqY" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <NugetDependency Id="K4GrUXVvGHFMk2Ytx0bUJu" Location="VL.Core" Version="0.74.5-g7395f266a4" />
+  <NugetDependency Id="DRFylVshPkANuwtVocn16l" Location="VL.CoreLib" Version="0.74.5-g7395f266a4" />
+  <NugetDependency Id="ANbpIDrsSGfLFZQGMxlXt9" Location="VL.CoreLib.VVVV" Version="0.74.5-g7395f266a4" />
+  <PlatformDependency Id="TO2NWmh2txYLYiH6DEb0eF" Location="../VL.Core/src/bin/AnyCPU/Debug/VL.Core.dll" />
+  <PlatformDependency Id="N8MPxVKB5LFO0LCd6lcbLE" Location="./src/bin/AnyCPU/Debug/VL.CoreLib.dll" />
+</Document>
